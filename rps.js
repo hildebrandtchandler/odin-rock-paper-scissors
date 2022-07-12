@@ -69,7 +69,11 @@ function playRound(playerSelection, computerSelection) {
     return result;
 }
 
-//test round
-const playerSelection = prompt();
-const computerSelection = computerPlay();
-console.log(playRound(playerSelection, computerSelection));
+//gameplay loop
+function game() {
+    for (let i = 0; i <5; i++) {
+        const playerSelection = prompt();
+        const computerSelection = computerPlay();
+        playRound(playerSelection, computerSelection);
+    }
+}
