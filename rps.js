@@ -109,4 +109,8 @@ function game() {
         document.getElementById("result").innerHTML = ("The final score was " + winCounter + " to " + loseCounter + " with " + drawCounter + " draws. You lose!");
         document.getElementById("result").style.background = "red";
     } 
+
+    //reset when done
+    winCounter = 0;
+    loseCounter = 0;
 }
